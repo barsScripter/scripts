@@ -13,13 +13,13 @@ u8 = encoding.UTF8
 
 update_state = false
 
-local script_vers = 2
-local script_vers_text = "1.05"
+local script_vers = 3
+local script_vers_text = "1.06"
 
-local update_url = "https://raw.githubusercontent.com/thechampguess/scripts/master/update.ini" -- тут тоже свою ссылку
+local update_url = "https://raw.githubusercontent.com/barsScripter/scripts/main/update.ini" -- тут тоже свою ссылку
 local update_path = getWorkingDirectory() .. "/update.ini" -- и тут свою ссылку
 
-local script_url = "https://github.com/thechampguess/scripts/blob/master/autoupdate_lesson_16.luac?raw=true" -- тут свою ссылку
+local script_url = "https://github.com/barsScripter/scripts/raw/main/autoupdate_lesson_16.lua" -- тут свою ссылку
 local script_path = thisScript().path
 
 
@@ -60,5 +60,5 @@ function main()
 end
 
 function cmd_update(arg)
-    sampShowDialog(1000, "Автообновление v2.0", "{FFFFFF}Это урок по обновлению\n{FFF000}Новая версия", "Закрыть", "", 0)
+    sampShowDialog(1000, "Автообновление v3.0", "{FFFFFF}Это урок по обновлению\n{FFF000}Новая версия", "Закрыть", "", 0)
 end
